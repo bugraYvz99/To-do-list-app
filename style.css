@@ -35,26 +35,81 @@ body {
 
     justify-content: space-between;
     width: 400px;
-    background: #ff9999;
+    background: grey;
     padding: 20px;
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
-.tasks{
+
+.tasks {
     background: #3399ff;
-  padding: 2px;
-    
+    padding: 2px;
+
 }
-.items .tasks{
+
+.items .tasks {
     background: #cce5ff;
     color: darkblue;
     margin: 5px;
 }
-li .dltbtn{
-    
-   
-    
 
+.items .tasks .dltbtn {
+
+
+    display: flex;
+    justify-content: flex-end;
+    flex: content;
+    border-radius: 5px;
+    background-color: darkgray;
+    padding: 3px;
+    margin-bottom: 3px;
+
+
+
+
+
+}
+
+.items .tasks .edtbtn {
+    display: flex;
+    justify-content: flex-end;
+    flex: content;
+    border-radius: 5px;
+    background-color: darkgray;
+    padding: 3px;
+    margin-bottom: 3px;
+
+}
+.tasks .dltbtn:after {
+    opacity: 0.8;
+    content: '\00bb';
+    position: absolute;
+     opacity: 0;
+     top: 0;
+    right: -20px;
+    transition: 0.5s;
     
-   
+}
+.tasks .dltbtn:hover {
+    opacity: 0.8;
+    
+    
+}
+
+.tasks .edtbtn:hover {
+    opacity: 0.8;
+}
+
+.tasks .dltbtn:active {
+    opacity: 0.6;
+    background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
+}
+
+.tasks .edtbtn:active {
+    opacity: 0.6;
+    background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
 }
