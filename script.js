@@ -23,6 +23,10 @@ function windowKeyEnterPressed() {
     edit_btn.classList.add("edtbtn");
     edit_btn.innerText = "EDİT";
     delete_btn.innerText = "DELETE";
+    var icon = document.createElement("i");
+    icon.classList.add("fa-solid","fa-trash");
+    delete_btn.appendChild(icon);
+    
     //DELETE FUNCTİON
     
     delete_btn.onclick = function (){
@@ -38,6 +42,7 @@ function windowKeyEnterPressed() {
         selectedLi.innerHTML = inputValue
         selectedLi.appendChild(delete_btn);
         selectedLi.appendChild(edit_btn);
+       
     }
     // İNPUT VALUE TO LİST
     var inputValue = userinput.value;
