@@ -1,0 +1,60 @@
+.Container {
+    border: 1rem;
+    border-radius: 1rem;
+    border-color: aliceblue;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min: height 100px;
+    background: black;
+    color: aliceblue;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+
+}
+
+.header1 {}
+
+#user-input {
+    flex: 1 1 0%;
+    background-color: yellow;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(darker);
+    font-size: 1rem;
+
+
+}
+
+.items {
+
+    justify-content: space-between;
+    width: 400px;
+    background: #ff9999;
+    padding: 20px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.tasks{
+    background: #3399ff;
+  padding: 2px;
+    
+}
+.items .tasks{
+    background: #cce5ff;
+    color: darkblue;
+    margin: 5px;
+}
+li .dltbtn{
+    
+   
+    
+
+    
+   
+}
