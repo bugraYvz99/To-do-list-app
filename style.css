@@ -1,23 +1,48 @@
-.Container {
+.container {
+    display: flex;
+    justify-content: center;
     border: 1rem;
     border-radius: 1rem;
     border-color: aliceblue;
+    flex-direction: column;
+    
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    border: 1rem;
+    border-radius: 1rem;
+    border-color: aliceblue;
+    flex-direction: column;
+    
+    
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    border: 1rem;
+    border-radius: 1rem;
+    border-color: aliceblue;
+    flex-direction: column;
+    
 }
 
 body {
     display: flex;
-    flex-direction: column;
-    min: height 100px;
+    justify-content: center;
     background: black;
-    color: aliceblue;
-    padding: 2rem 1rem;
-    max-width: 800px;
-    width: 100%;
-    margin: auto;
+    
+    
+    
 
 }
 
-.header1 {}
+.header1{
+    color: aliceblue;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
 
 #user-input {
     flex: 1 1 0%;
@@ -27,6 +52,7 @@ body {
     margin-right: 1rem;
     color: var(darker);
     font-size: 1rem;
+    
 
 
 }
@@ -35,40 +61,42 @@ body {
 
     justify-content: space-between;
     width: 400px;
-    background: grey;
+    background: rgb(49, 49, 49);
     padding: 20px;
     border-radius: 1rem;
     margin-bottom: 1rem;
+    overflow: auto;
+    
+    
 }
 
 .tasks {
-    background: #3399ff;
     padding: 2px;
+    font-size: 1rem;
+    
 
 }
 
 .items .tasks {
-    background: #cce5ff;
-    color: darkblue;
+    background: #757575;
+    color: rgb(206, 228, 11);
     margin: 5px;
+    
 }
 
 .items .tasks .dltbtn {
-
-
+    background-image: url("D:\Frontend Projects\To do app\img\delete (1).png");
+    background: cover;
+    background-size: 2rem;
     display: flex;
-    justify-content: flex-end;
     flex: content;
+    justify-content: flex-end;
     border-radius: 5px;
     background-color: darkgray;
     padding: 3px;
     margin-bottom: 3px;
-
-
-
-
-
 }
+
 
 .items .tasks .edtbtn {
     display: flex;
